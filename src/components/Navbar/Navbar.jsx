@@ -1,10 +1,11 @@
 import React from "react";
 import styles from"./Navbar.module.css"
+import { NavLink } from "react-router-dom";       <<<<<<<<<<<
 
 const Navbar = () =>{
     return <nav className={styles.nav}>
     <div className={styles.item}>
-      <a>Profile</a>
+      <NavLink to="/profile" style={({ isActive }) => ({color: isActive ? 'gold' : '#fff', background: isActive ? '' : '',})}>Profile</NavLink>      <<<<<<
     </div>
 
     <div className={styles.item}>
